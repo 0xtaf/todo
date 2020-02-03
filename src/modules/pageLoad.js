@@ -9,10 +9,12 @@ const PageLoad = (()=>{
     const cancelButton = document.querySelector('.cancelButton');
     const addButton = document.querySelector('.addButton');
 
-
+    const table = document.getElementById("table");
     const contentProject = document.getElementById("projectContent");
+    const table2 = document.getElementById("table2");
+    const toDoProject = document.getElementById("toDoContent");
 
-    return {addProject, addProjectForm, cancelButton, addButton, contentProject};
+    return {addProject, addProjectForm, cancelButton, addButton, contentProject, table, table2, toDoProject};
 })();
 
 export default PageLoad

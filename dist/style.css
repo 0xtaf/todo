@@ -42,3 +42,7 @@
 .newProjectViewForm .addButton:hover, .cancelButton:hover, .newBookButton:hover {
     opacity: 1;
 }
+
+td{
+    border: solid 1px black;
+}

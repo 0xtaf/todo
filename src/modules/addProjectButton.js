@@ -1,6 +1,7 @@
 import PageLoad from './pageLoad';
 import myProjects from './pageLoadLogic';
 import createProjects from './createProjects';
+import renderProjectsFunc from './renderProjects'
 
 function addProjectButtonFunc() {
     PageLoad.addProjectForm.style.display = "block";
@@ -20,7 +21,7 @@ function submitForm() {
     let name = document.querySelector('[name="name"]').value;
     myProjects.push(createProjects(name));
     console.log(myProjects)
-
+    renderProjectsFunc();
 
     PageLoad.addProjectForm.style.display = "none";
 }
