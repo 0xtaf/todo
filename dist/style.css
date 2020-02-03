@@ -1,0 +1,44 @@
+.newProjectViewForm {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.newProjectViewForm input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.newProjectViewForm input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+.newProjectViewForm .addButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.newProjectViewForm .cancelButton {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+.newProjectViewForm .addButton:hover, .cancelButton:hover, .newBookButton:hover {
+    opacity: 1;
+}
