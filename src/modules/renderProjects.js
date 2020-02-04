@@ -1,6 +1,7 @@
 import {myProjects, index} from './pageLoadLogic';
 import PageLoad from './pageLoad';
 import renderToDosFunc from './renderToDos.js';
+import renderHeaderFunc from './renderHeader.js';
 import getProjectIndex from './choseProject';
 
 
@@ -13,8 +14,10 @@ function renderProjectsFunc() {
         let cell1 = row.insertCell(0);
        
         cell1.innerHTML = myProjects[i].name;
-        cell1.addEventListener('click', renderToDosFunc)
+        cell1.addEventListener('click', renderHeaderFunc)
         cell1.addEventListener('click', getProjectIndex)
+        cell1.addEventListener('click', renderToDosFunc)
+        
     }
 
 

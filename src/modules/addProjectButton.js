@@ -16,10 +16,12 @@ function closeForm() {
 }
 
 function submitForm() {
+
     event.preventDefault();
     console.log("add")
     let name = document.querySelector('[name="name"]').value;
     myProjects.push(createProjects(name));
+    
     console.log(myProjects)
     renderProjectsFunc();
 

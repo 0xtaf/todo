@@ -1,6 +1,7 @@
 
 const CreateProjects = (name) => {
-   return {name};
+   const todoArray = [];
+   return {name, todoArray};
 };
 
 export default CreateProjects

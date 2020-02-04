@@ -1,6 +1,6 @@
 import PageLoad from './pageLoad';
 import {myProjects, index} from './pageLoadLogic';
-import createProjects from './createProjects';
+import CreateProjects from './createProjects';
 import renderProjectsFunc from './renderProjects';
 import getProjectIndex from './choseProject';
 import renderToDosFunc from './renderToDos';
@@ -11,10 +11,11 @@ function addTodo() {
     
     
     let todoTitle = document.querySelector('.todoTitle').value;
-    myProjects[index.indexNo].title = todoTitle;
+    // myArray.push(todoTitle);
+    myProjects[index.indexNo]['todoArray'].push(todoTitle);
+    // console.log(myProjects[index.indexNo]['todoArray']);
     console.log(myProjects)
-    // renderToDosFunc(); bunu renderlamak kaldı. 
-
+    renderToDosFunc();
 }
 
 export default addTodo
