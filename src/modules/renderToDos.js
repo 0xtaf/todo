@@ -1,8 +1,9 @@
-import myProjects from './pageLoadLogic';
+import {myProjects, index} from './pageLoadLogic';
 import PageLoad from './pageLoad';
+import getProjectIndex from './choseProject';
 
 function renderToDosFunc() {
-    console.log(this.parentNode.dataset.index);
+    PageLoad.header.textContent = myProjects[this.parentNode.dataset.index].name;
+    // getProjectIndex()
 }
-
 export default renderToDosFunc

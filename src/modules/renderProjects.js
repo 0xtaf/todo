@@ -1,6 +1,8 @@
-import myProjects from './pageLoadLogic';
+import {myProjects, index} from './pageLoadLogic';
 import PageLoad from './pageLoad';
 import renderToDosFunc from './renderToDos.js';
+import getProjectIndex from './choseProject';
+
 
 function renderProjectsFunc() {
     let length = myProjects.length - 1;
@@ -12,6 +14,7 @@ function renderProjectsFunc() {
        
         cell1.innerHTML = myProjects[i].name;
         cell1.addEventListener('click', renderToDosFunc)
+        cell1.addEventListener('click', getProjectIndex)
     }
 
 

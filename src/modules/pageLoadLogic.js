@@ -1,3 +1,6 @@
 let myProjects = [];
+let index = { 
+    indexNo:-1
+};
 
-export default myProjects
+export {myProjects, index}

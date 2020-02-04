@@ -1,5 +1,5 @@
 import PageLoad from './pageLoad';
-import myProjects from './pageLoadLogic';
+import {myProjects, index} from './pageLoadLogic';
 import createProjects from './createProjects';
 import renderProjectsFunc from './renderProjects'
 
