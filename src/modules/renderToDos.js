@@ -1,6 +1,7 @@
 import {myProjects, index} from './pageLoadLogic';
 import PageLoad from './pageLoad';
 import getProjectIndex from './choseProject';
+import removeFunc from './removeItem';
 
 
 function renderToDosFunc() {
@@ -17,8 +18,16 @@ function renderToDosFunc() {
         let row = PageLoad.toDoProject.insertRow(0);
         row.setAttribute("data-index", `${i}`);
         let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
        
         cell1.innerHTML = myProjects[index.indexNo]['todoArray'][i];
+        cell2.innerHTML = `<button class="button">Remove</button>`;
+        cell2.className = "remove";
     }
+
+    let removeButtons  = [...document.querySelectorAll(".remove")];
+		removeButtons.forEach(button => {
+			button.addEventListener('click', removeFunc);
+		});
 }
 export default renderToDosFunc
