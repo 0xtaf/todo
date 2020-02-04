@@ -46,3 +46,23 @@
 td{
     border: solid 1px black;
 }
+
+.header{
+    border: solid 1px black;
+    text-align: center;
+}
+
+.todoTitle{
+    border: solid 1px black;
+    text-align: center;
+    margin-left: 27%;
+    width: 45%;
+}
+.todoTextNode{
+    border: solid 1px black;
+    text-align: center;
+}
+
+.addButtonTodo{
+    text-align: center;
+}
