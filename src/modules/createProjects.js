@@ -1,7 +1,8 @@
 
 const CreateProjects = (name) => {
    const todoArray = [];
-   return {name, todoArray};
+   const priority = [];
+   return {name, todoArray, priority};
 };
 
 export default CreateProjects
