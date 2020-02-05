@@ -14,6 +14,7 @@ function addTodo() {
     myProjects[index.indexNo]['todoArray'].push(todoTitle);
     console.log(myProjects)
     renderToDosFunc();
+    
 }
 
 export default addTodo

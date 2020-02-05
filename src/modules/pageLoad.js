@@ -35,7 +35,8 @@ const PageLoad = (()=>{
 
     const todoTitle = document.createElement('textarea');
      todoTitle.className = "todoTitle";
-    const todoTextNode = document.createTextNode("this is a sample to do");
+    const todoTextNode = document.createTextNode("");
+    todoTitle.placeholder = "What do you need to do?"
     todoTextNode.className = "todoTextNode";
     
     todoTitle.appendChild(todoTextNode);
@@ -43,8 +44,13 @@ const PageLoad = (()=>{
 
     const addButtonTodo = document.createElement('button');
     addButtonTodo.className = "addButtonTodo";
-    addButtonTodo.textContent="add ToDo"
+    // addButtonTodo.textContent="
     container2.insertBefore(addButtonTodo, table2);
+
+    const plusSign2 = document.createElement('div');
+    plusSign2.innerHTML = "&#43;"
+    plusSign2.className="plusSign2";
+    addButtonTodo.appendChild(plusSign2);
 
     
 

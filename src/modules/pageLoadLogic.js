@@ -1,5 +1,6 @@
 import CreateProjects from './createProjects';
 import renderProjectsFunc from './renderProjects'
+import getProjectIndex from './choseProject';
 
 let myProjects = [];
 
@@ -13,5 +14,6 @@ let index = {
 
 
 renderProjectsFunc();
+getProjectIndex();
 index.indexNo = 0;
 export {myProjects, index}

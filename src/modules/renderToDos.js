@@ -13,8 +13,10 @@ function renderToDosFunc() {
         let row = PageLoad.toDoProject.insertRow(0);
         row.setAttribute("data-index", `${i}`);
         let cell1 = row.insertCell(0);
+        cell1.className = "nameCell";
         let cell2 = row.insertCell(1);
         let cell3 = row.insertCell(2);
+        
        
         cell1.innerHTML = myProjects[index.indexNo]['todoArray'][i];
         const priorityVal = myProjects[index.indexNo]['priority'][i];
@@ -74,8 +76,8 @@ function renderToDosFunc() {
         
         
         cell2.className = "selPriority";
-        cell3.innerHTML = `<button class="button">Remove</button>`;
-        cell3.className = "remove";
+        cell3.innerHTML = `<button class="button">&#128465;</button>`;
+        cell3.className ="remove";
         
     
     // const priorityVal = `${myProjects[index.indexNo]['priority'].priorityNo}`;  
