@@ -1,11 +1,13 @@
+
+
 .newProjectViewForm {
     max-width: 300px;
     padding: 10px;
-    background-color: white;
+    
 }
 
 .newProjectViewForm input[type=text]{
-    width: 100%;
+    width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
@@ -43,20 +45,26 @@
     opacity: 1;
 }
 
-td{
-    border: solid 1px black;
+.project-td{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .header{
-    border: solid 1px black;
+    /* border: solid 1px black; */
     text-align: center;
+    margin-left: 23%;
+    width: 53%;
+    font-size: 30px;
 }
 
 .todoTitle{
     border: solid 1px black;
-    text-align: center;
+    
     margin-left: 27%;
     width: 45%;
+    margin-top: 2%;
 }
 .todoTextNode{
     border: solid 1px black;
@@ -70,4 +78,66 @@ td{
 #table2{
     margin-left: 27%;
     width: 45%;
+}
+
+.container{
+    position: absolute;
+    /* border: solid 1px; */
+    width: 23%;
+    flex-direction: column;
+    left: 0;
+    height: 100vh;
+    
+    top: 0;
+    right: -240px;
+    right: calc(var(--drawer-width)*-1);
+    transform: translateX(0);
+    background: #e6e6e6;
+    /* overflow-y: scroll; */
+    z-index: var(--nav-drawer-z-index);
+    transition: transform .2s;
+    transition-timing-function: ease-out;
+    display: flex;
+    flex-direction: column;
+    transform: translate3d(calc(var(--drawer-width)*-1),0,0);
+    transition-timing-function: ease-in;
+}
+
+.projectButton{
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding: 0 15px;
+    margin: 12px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    outline: none;
+    margin-left: 25%;
+    margin-top: 10%;
+    border: 1px solid transparent;
+    background-color: green;
+    
+}
+
+.projectButton:hover{
+    transform: scale(1.1);
+}
+.projectButton:active{
+    transform: scale(1.0);
+}
+.projectButtonLabel{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 13.5%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.plusSign{
+    font-size: 40px;
+    color: white;
+    margin-left: -5.5px;
+    margin-top: -2.6px;
 }
