@@ -192,7 +192,7 @@
     width: 34em;
     word-break: break-all;
 }
-.remove{
+.button{
     
     display: inline-block;
     border: 0px solid gray;
@@ -204,11 +204,12 @@
     width: 5px;
     margin-left: 10px;
     margin-top: 4px;
+    outline: none;
 }
-.remove:hover{
+.button:hover{
     transform: scale(1.1);
 }
-.remove:focus{
+.button:focus{
     transform: scale(1.0);
 }
 .priority {
@@ -224,4 +225,5 @@
     background-color: #ffffff;
     cursor: pointer;
     white-space: nowrap;
+    width: 70px;
 }
