@@ -65,7 +65,20 @@
     margin-left: 27%;
     width: 45%;
     margin-top: 2%;
+    border-bottom-color: rgb(156, 148, 148);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    margin: 27px 0px 0px 364.5px;
+    height: 17px;
+    width: 618px;
+    resize: none;
+    overflow: auto;
+    height: auto;
 }
+
+
 .todoTextNode{
     border: solid 1px black;
     text-align: center;
@@ -81,7 +94,7 @@
 }
 
 .container{
-    position: absolute;
+    position: fixed;
     /* border: solid 1px; */
     width: 23%;
     flex-direction: column;
@@ -101,6 +114,7 @@
     flex-direction: column;
     transform: translate3d(calc(var(--drawer-width)*-1),0,0);
     transition-timing-function: ease-in;
+    float: left;
 }
 
 .projectButton{
@@ -140,4 +154,74 @@
     color: white;
     margin-left: -5.5px;
     margin-top: -2.6px;
+}
+
+.addButtonTodo{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin: 12px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    outline: none;
+    margin-left: 74.5%;
+    margin-top: -3%;
+    border: 1px solid transparent;
+    background-color: green;
+}
+.addButtonTodo:hover{
+    transform: scale(1.1);
+}
+.addButtonTodo:active{
+    transform: scale(1.0);
+}
+
+
+.plusSign2{
+    font-size: 33px;
+    color: white;
+    margin-left: -9.5px;
+    margin-top: -3.6px;
+}
+
+.nameCell {
+    list-style: none;
+    word-wrap: normal;
+    width: 34em;
+    word-break: break-all;
+}
+.remove{
+    
+    display: inline-block;
+    border: 0px solid gray;
+    border-radius: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 35px;
+    width: 5px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.remove:hover{
+    transform: scale(1.1);
+}
+.remove:focus{
+    transform: scale(1.0);
+}
+.priority {
+    width: 70px;
+    border-radius: 50px;
+}
+
+.prio{
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 6px 2px 6px 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
 }
