@@ -21,7 +21,6 @@ function renderProjectsFunc() {
         
     }
 
-
 }
 
 export default renderProjectsFunc

@@ -1,5 +1,5 @@
 const PageLoad = (()=>{
-
+    console.log("page is loading")
     const container = document.querySelector('.container');
     const container2 = document.querySelector('.container2');
 
@@ -29,7 +29,7 @@ const PageLoad = (()=>{
     const toDoProject = document.getElementById("toDoContent");
 
     const header = document.createElement('div');
-    header.textContent ="divdir bu";
+    header.textContent ="My Project";
     header.className = "header";
     document.body.insertBefore(header, container);
 
@@ -46,11 +46,14 @@ const PageLoad = (()=>{
     addButtonTodo.textContent="add ToDo"
     container2.insertBefore(addButtonTodo, table2);
 
+    
 
     return {addProject, addProjectForm, cancelButton, addButton, 
         contentProject, table, table2, toDoProject, header, container,
         container2, todoTitle, todoTextNode, addButtonTodo
     };
 })();
+
+
 
 export default PageLoad
