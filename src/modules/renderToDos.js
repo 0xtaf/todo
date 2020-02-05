@@ -24,8 +24,8 @@ function renderToDosFunc() {
 
         if (priorityVal==0){
             cell2.innerHTML = `
-            <div class="priority" style="width:200px;">
-                <select>
+            <div class="priority">
+                <select class="prio">
                 <option value="0" selected>Priority:</option>
                 <option value="1">High</option>
                 <option value="2">Medium</option>
@@ -34,8 +34,8 @@ function renderToDosFunc() {
             </div>`;
         } else if (priorityVal==1){
             cell2.innerHTML = `
-            <div class="priority" style="width:200px;">
-                <select>
+            <div class="priority">
+                <select class="prio">
                 <option value="0">Priority:</option>
                 <option value="1" selected>High</option>
                 <option value="2">Medium</option>
@@ -44,8 +44,8 @@ function renderToDosFunc() {
             </div>`;
         } else if (priorityVal==2){
             cell2.innerHTML = `
-            <div class="priority" style="width:200px;">
-                <select>
+            <div class="priority">
+                <select class="prio">
                 <option value="0">Priority:</option>
                 <option value="1">High</option>
                 <option value="2" selected>Medium</option>
@@ -54,8 +54,8 @@ function renderToDosFunc() {
             </div>`;
         } else if (priorityVal==3){
             cell2.innerHTML = `
-            <div class="priority" style="width:200px;">
-                <select>
+            <div class="priority">
+                <select class="prio">
                 <option value="0">Priority:</option>
                 <option value="1">High</option>
                 <option value="2">Medium</option>
@@ -64,8 +64,8 @@ function renderToDosFunc() {
             </div>`;
         } else {
             cell2.innerHTML = `
-            <div class="priority" style="width:200px;">
-                <select>
+            <div class="priority">
+                <select class="prio">
                 <option value="0" selected>Priority:</option>
                 <option value="1">High</option>
                 <option value="2">Medium</option>
