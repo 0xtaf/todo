@@ -1,13 +1,24 @@
 const PageLoad = (()=>{
-    const addProject = document.createElement('button');
-    addProject.textContent = "Add a project";
-    document.body.appendChild(addProject);
 
     const container = document.querySelector('.container');
     const container2 = document.querySelector('.container2');
 
     const addProjectForm = document.querySelector('.newProjectViewForm');
     addProjectForm.style.display = "none";
+
+    const addProject = document.createElement('button');
+    addProjectForm.before(addProject);
+    addProject.className = "projectButton";
+
+    const addProjectLabel = document.createElement('label');
+    addProjectLabel.textContent ="Add a Project"
+    addProjectLabel.className = "projectButtonLabel"
+    addProject.after(addProjectLabel);
+
+    const plusSign = document.createElement('div');
+    plusSign.innerHTML = "&#43;"
+    plusSign.className="plusSign";
+    addProject.appendChild(plusSign);
 
     const cancelButton = document.querySelector('.cancelButton');
     const addButton = document.querySelector('.addButton');

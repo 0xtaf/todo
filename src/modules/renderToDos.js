@@ -6,13 +6,7 @@ import priorityChangeFunc from './priorityChange.js'
 
 
 function renderToDosFunc() {
-    console.log("renderda index s")
-    console.log(myProjects[index.indexNo])
-    console.log("renderda index e")
     let length = myProjects[index.indexNo]['todoArray'].length - 1;
-    console.log("length s")
-    console.log(length)
-    console.log("length e")
     PageLoad.toDoProject.innerHTML="";
 
     for (let i = length; i >= 0; i--){

@@ -1,8 +1,8 @@
 import PageLoad from './pageLoad';
 import {myProjects, index} from './pageLoadLogic';
 
-function renderToDosFunc() {
+function renderHeaderFunc() {
     PageLoad.header.textContent = myProjects[this.parentNode.dataset.index].name;
 }
 
-export default renderToDosFunc
+export default renderHeaderFunc

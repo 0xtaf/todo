@@ -8,7 +8,6 @@ function addProjectButtonFunc() {
 }
 
 function closeForm() {
-    console.log("form kapama")
 	event.preventDefault();
 	PageLoad.addProjectForm.style.display = "none";
 	// table.style.display = "";
@@ -18,11 +17,9 @@ function closeForm() {
 function submitForm() {
 
     event.preventDefault();
-    console.log("add")
     let name = document.querySelector('[name="name"]').value;
     myProjects.push(createProjects(name));
-    
-    console.log(myProjects)
+
     renderProjectsFunc();
 
     PageLoad.addProjectForm.style.display = "none";

@@ -14,6 +14,7 @@ function renderProjectsFunc() {
         let cell1 = row.insertCell(0);
        
         cell1.innerHTML = myProjects[i].name;
+        cell1.className ="project-td";
         cell1.addEventListener('click', renderHeaderFunc)
         cell1.addEventListener('click', getProjectIndex)
         cell1.addEventListener('click', renderToDosFunc)

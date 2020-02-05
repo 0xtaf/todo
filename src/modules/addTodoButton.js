@@ -6,14 +6,12 @@ import getProjectIndex from './choseProject';
 import renderToDosFunc from './renderToDos';
 
 function addTodo() {
-    console.log("add to doooo")
-    console.log(index.indexNo);
+    myProjects[index.indexNo]['priority'].push("0");
     
     
     let todoTitle = document.querySelector('.todoTitle').value;
-    // myArray.push(todoTitle);
+    
     myProjects[index.indexNo]['todoArray'].push(todoTitle);
-    // console.log(myProjects[index.indexNo]['todoArray']);
     console.log(myProjects)
     renderToDosFunc();
 }
