@@ -49,6 +49,11 @@
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
+    list-style: none;
+    word-wrap: normal;
+    width: 34em;
+    word-break: break-all;
+    outline: none;
 }
 
 .header{
@@ -245,4 +250,24 @@
     width: 34em;
     word-break: break-all;
     text-decoration: line-through;
+}
+
+.remove2{
+    
+    display: inline-block;
+    border: 0px solid gray;
+    border-radius: 4px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-top: 4px;
+    outline: none;
+}
+.remove2:hover{
+    transform: scale(1.1);
+}
+.remove2:focus{
+    transform: scale(1.0);
 }
