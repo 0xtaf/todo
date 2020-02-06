@@ -6,7 +6,9 @@ import getProjectIndex from './choseProject';
 import renderToDosFunc from './renderToDos';
 
 function addTodo() {
+    renderToDosFunc();
     myProjects[index.indexNo]['priority'].push("0");
+    myProjects[index.indexNo]['isDone'].push("0");
     
     
     let todoTitle = document.querySelector('.todoTitle').value;

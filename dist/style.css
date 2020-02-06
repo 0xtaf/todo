@@ -225,5 +225,24 @@
     background-color: #ffffff;
     cursor: pointer;
     white-space: nowrap;
-    width: 70px;
+    width: 75px;
+}
+
+.isDoneButton{
+    display: inline-block;
+    border: 0px solid gray;
+    border-radius: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 35px;
+    outline: none;
+}
+
+.isDone{
+    list-style: none;
+    word-wrap: normal;
+    width: 34em;
+    word-break: break-all;
+    text-decoration: line-through;
 }

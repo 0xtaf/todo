@@ -2,7 +2,9 @@ import {myProjects, index} from './pageLoadLogic';
 import PageLoad from './pageLoad';
 import getProjectIndex from './choseProject';
 import removeFunc from './removeItem';
-import priorityChangeFunc from './priorityChange.js'
+import priorityChangeFunc from './priorityChange';
+import checkCompletionFunc from './checkCompletion';
+import editTodoFunc from './editTodo';
 
 
 function renderToDosFunc() {
@@ -12,15 +14,25 @@ function renderToDosFunc() {
     for (let i = length; i >= 0; i--){
         let row = PageLoad.toDoProject.insertRow(0);
         row.setAttribute("data-index", `${i}`);
-        let cell1 = row.insertCell(0);
+        let cell0 = row.insertCell(0);
+        cell0.innerHTML = `<button class="isDoneButton">&#x2714;</button>`;
+
+        let cell1 = row.insertCell(1);
         cell1.className = "nameCell";
-        let cell2 = row.insertCell(1);
-        let cell3 = row.insertCell(2);
+        cell1.contentEditable ="true";
+        let cell2 = row.insertCell(2);
+        let cell3 = row.insertCell(3);
         
        
         cell1.innerHTML = myProjects[index.indexNo]['todoArray'][i];
         const priorityVal = myProjects[index.indexNo]['priority'][i];
-        
+        const isDoneVal = myProjects[index.indexNo]['isDone'][i];
+
+        if (isDoneVal == 1){
+            cell1.className = "isDone";
+        }
+
+        cell1.addEventListener('focusout', editTodoFunc);
 
         if (priorityVal==0){
             cell2.innerHTML = `
@@ -84,7 +96,10 @@ function renderToDosFunc() {
 
 }
 
-
+    let checkCompletions = [...document.querySelectorAll(".isDoneButton")];
+        checkCompletions.forEach(selection => {
+            selection.addEventListener('click', checkCompletionFunc);
+        });
 
 
     let prioritySelections =  [...document.querySelectorAll(".selPriority")];

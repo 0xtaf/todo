@@ -4,6 +4,7 @@ import getProjectIndex from './choseProject';
 
 let myProjects = [];
 
+console.log("myProjects is being created")
 myProjects.push(CreateProjects("My Project"));
 console.log(myProjects)
 
