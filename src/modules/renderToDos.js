@@ -1,6 +1,5 @@
 import {myProjects, index} from './pageLoadLogic';
 import PageLoad from './pageLoad';
-import getProjectIndex from './choseProject';
 import removeFunc from './removeItem';
 import priorityChangeFunc from './priorityChange';
 import checkCompletionFunc from './checkCompletion';
@@ -92,10 +91,6 @@ function renderToDosFunc() {
         cell2.className = "selPriority";
         cell3.innerHTML = `<button class="button">&#128465;</button>`;
         cell3.className ="remove";
-        
-    
-    // const priorityVal = `${myProjects[index.indexNo]['priority'].priorityNo}`;  
-
 }
 
     let checkCompletions = [...document.querySelectorAll(".isDoneButton")];

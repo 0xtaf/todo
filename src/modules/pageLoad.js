@@ -1,5 +1,4 @@
 const PageLoad = (()=>{
-    console.log("page is loading")
     const container = document.querySelector('.container');
     const container2 = document.querySelector('.container2');
 

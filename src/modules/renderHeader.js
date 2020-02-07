@@ -2,7 +2,11 @@ import PageLoad from './pageLoad';
 import {myProjects, index} from './pageLoadLogic';
 
 function renderHeaderFunc() {
-    PageLoad.header.textContent = myProjects[this.parentNode.dataset.index].name;  
+    if (typeof (this) !== 'undefined'){
+        PageLoad.header.textContent = myProjects[this.parentNode.dataset.index].name;  
+    } else {
+        PageLoad.header.textContent = myProjects[0].name;  
+    }
 }
 
 export default renderHeaderFunc

@@ -1,5 +1,4 @@
 import {myProjects, index} from './pageLoadLogic';
-import PageLoad from './pageLoad';
 
 function getProjectIndex() {
 

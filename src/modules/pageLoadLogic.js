@@ -2,13 +2,12 @@ import CreateProjects from './createProjects';
 import renderProjectsFunc from './renderProjects';
 import renderToDosFunc from './renderToDos';
 import getProjectIndex from './choseProject';
+import renderHeaderFunc from './renderHeader';
 import storageAvailable from './localStorage';
 
 let myProjects = [];
 
-console.log("myProjects is being created")
 myProjects.push(CreateProjects("My Project"));
-console.log(myProjects)
 
 let index = { 
     indexNo:-1,
@@ -28,10 +27,12 @@ if (storageAvailable('localStorage')) {
 
 
 
-
+index.indexNo = 0;
 getProjectIndex();
+renderHeaderFunc();
 renderProjectsFunc();
 renderToDosFunc();
 
-index.indexNo = 0;
+
+
 export {myProjects, index}

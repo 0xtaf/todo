@@ -1,11 +1,10 @@
 import PageLoad from './pageLoad';
 import {myProjects, index} from './pageLoadLogic';
-import renderHeaderFunc from './renderHeader';
 import storageAvailable from './localStorage';
 storageAvailable();
 
 function editableProjectFunc(){  
-    console.log(this.parentNode.dataset.index)
+    
     PageLoad.header.textContent = myProjects[this.parentNode.dataset.index].name;
     const tdProjects = [...document.querySelectorAll('.project-td')]
     let counter = 0;

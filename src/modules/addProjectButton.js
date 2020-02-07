@@ -19,6 +19,7 @@ function submitForm() {
     event.preventDefault();
     let name = document.querySelector('[name="name"]').value;
     myProjects.push(createProjects(name));
+    document.querySelector('[name="name"]').value = "";
     console.log(myProjects)
     renderProjectsFunc();
 

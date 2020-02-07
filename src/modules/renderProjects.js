@@ -12,7 +12,6 @@ storageAvailable();
 
 
 function renderProjectsFunc() {
-    console.log("render projeye girdi")
     let length = myProjects.length - 1;
     PageLoad.contentProject.innerHTML="";
     for (let i = length; i >= 0; i--){
@@ -30,9 +29,8 @@ function renderProjectsFunc() {
         cell1.addEventListener('focusout', editProjectFunc)
         
 
-        console.log(i)
+        
         if (i != 0){
-            console.log(i)
             cell2.innerHTML = `<button class="remove2">&#128465;</button>`;
         }
         
