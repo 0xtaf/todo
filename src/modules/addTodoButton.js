@@ -10,8 +10,8 @@ function addTodo() {
     myProjects[index.indexNo]['priority'].push("0");
     myProjects[index.indexNo]['isDone'].push("0");
     
-    
-    let todoTitle = document.querySelector('.todoTitle').value;
+    console.log(document.querySelector('.todoTitle').textContent)
+    let todoTitle = document.querySelector('.todoTitle').textContent;
     
     myProjects[index.indexNo]['todoArray'].push(todoTitle);
     console.log(myProjects)

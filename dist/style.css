@@ -1,4 +1,24 @@
-
+html{
+    font-family: Roboto, Arial, sans-serif;;
+}
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+  }
+  
+  /* */
+  
+  div[contenteditable=true] {
+    border: 1px dashed #AAA;
+    
+    padding: 15px;
+  }
+  
+  pre {
+    background:#EEE;
+    padding:5px;
+    
+  }
 
 .newProjectViewForm {
     max-width: 300px;
@@ -68,6 +88,26 @@
     border: solid 1px black;
     
     margin-left: 27%;
+    width: 44%;
+    margin-top: 2%;
+    border-bottom-color: rgb(156, 148, 148);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    
+    height: 17px;
+    
+    resize: none;
+    overflow: auto;
+    height: auto;
+    display: hidden;
+}
+
+.todoInput{
+    border: solid 1px black;
+    
+    margin-left: 27%;
     width: 45%;
     margin-top: 2%;
     border-bottom-color: rgb(156, 148, 148);
@@ -82,7 +122,6 @@
     overflow: auto;
     height: auto;
 }
-
 
 .todoTextNode{
     border: solid 1px black;

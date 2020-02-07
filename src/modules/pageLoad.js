@@ -33,18 +33,13 @@ const PageLoad = (()=>{
     header.className = "header";
     document.body.insertBefore(header, container);
 
-    const todoTitle = document.createElement('textarea');
-     todoTitle.className = "todoTitle";
-    const todoTextNode = document.createTextNode("");
+    const todoTitle = document.querySelector('.todoTitle')
     todoTitle.placeholder = "What do you need to do?"
-    todoTextNode.className = "todoTextNode";
-    
-    todoTitle.appendChild(todoTextNode);
+
     container2.insertBefore(todoTitle, table2)
 
     const addButtonTodo = document.createElement('button');
     addButtonTodo.className = "addButtonTodo";
-    // addButtonTodo.textContent="
     container2.insertBefore(addButtonTodo, table2);
 
     const plusSign2 = document.createElement('div');
@@ -52,11 +47,10 @@ const PageLoad = (()=>{
     plusSign2.className="plusSign2";
     addButtonTodo.appendChild(plusSign2);
 
-    
 
     return {addProject, addProjectForm, cancelButton, addButton, 
         contentProject, table, table2, toDoProject, header, container,
-        container2, todoTitle, todoTextNode, addButtonTodo
+        container2, todoTitle, addButtonTodo
     };
 })();
 
