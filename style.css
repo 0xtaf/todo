@@ -10,10 +10,15 @@ html{
   
   div[contenteditable=true] {
     border: 1px dashed #AAA;
-    
+    color: rgb(174, 174, 190);
     padding: 15px;
   }
-  
+  div[contenteditable=true]:focus {
+    
+    border: 1px dashed #AAA;
+    color: black;
+    padding: 15px;
+  }
   pre {
     background:#EEE;
     padding:5px;
@@ -97,7 +102,7 @@ html{
     outline: none;
     
     height: 17px;
-    
+    color: black;
     resize: none;
     overflow: auto;
     height: auto;
